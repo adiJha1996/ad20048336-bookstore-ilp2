@@ -31,7 +31,7 @@ public class LoginFunctionalTest {
 		// new FirefoxDriver();
 				FirefoxBinary firefoxBinary = new FirefoxBinary();
         firefoxBinary.addCommandLineOptions("--headless");
-        System.setProperty("webdriver.gecko.driver", "/D:/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "D:\\geckodriver\\geckodriver.exe");
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setBinary(firefoxBinary);
         

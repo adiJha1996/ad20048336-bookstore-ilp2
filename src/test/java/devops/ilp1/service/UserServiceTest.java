@@ -11,7 +11,7 @@ public class UserServiceTest {
 	@Test
 	public void testIsAutherozied() {
 		User u1=new User("Avinash","Patel","1234","avinash.patel@wipro.com");
-		assertEquals(false,new UserService().isAuthorized(u1));
+		assertEquals(true,new UserService().isAuthorized(u1));
 	}
 
 	@Test
