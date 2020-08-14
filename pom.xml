@@ -228,6 +228,16 @@
 						<target>1.8</target>
 					</configuration>
 				</plugin>
+<<<<<<< HEAD
+=======
+				<plugins>
+        ...
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>2.2</version>
+        </plugin>
+>>>>>>> 3db9208b134ccdaf92f7b547a23d021a8daf6d86
 			</plugins>
 		</pluginManagement> 
 <distributionManagement>
