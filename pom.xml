@@ -228,10 +228,10 @@
 						<target>1.8</target>
 					</configuration>
 				</plugin>
-<<<<<<< HEAD
-=======
+
+
 				<plugins>
-        ...
+        
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
