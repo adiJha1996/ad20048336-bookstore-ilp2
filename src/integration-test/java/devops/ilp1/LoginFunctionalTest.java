@@ -8,6 +8,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.internal.ProfilesIni
 
 import org.openqa.selenium.firefox.FirefoxOptions;
 
@@ -29,7 +31,9 @@ public class LoginFunctionalTest {
 	public static void setup() {
 	//	driver = new ChromeDriver();
 		// new FirefoxDriver();
-				FirefoxBinary firefoxBinary = new FirefoxBinary();
+		ProfilesIni profile=new ProfilesIni();
+		FirefoxProfile myprofile=profile.getProfile("aditya");
+				FirefoxBinary firefoxBinary = new FirefoxBinary(myprofile);
         firefoxBinary.addCommandLineOptions("--headless");
         System.setProperty("webdriver.gecko.driver", "D:\\geckodriver\\geckodriver.exe");
         FirefoxOptions firefoxOptions = new FirefoxOptions();
