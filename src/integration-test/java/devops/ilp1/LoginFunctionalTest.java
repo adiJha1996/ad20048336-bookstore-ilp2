@@ -46,7 +46,7 @@ public class LoginFunctionalTest {
 
 	@AfterClass
 	public static void cleanUp() {
-		driver.quit();
+		driver.close();
 	}
 
 	@Test
