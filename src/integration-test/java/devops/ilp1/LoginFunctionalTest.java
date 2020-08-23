@@ -35,18 +35,18 @@ public class LoginFunctionalTest {
 				FirefoxBinary firefoxBinary = new FirefoxBinary();
         firefoxBinary.addCommandLineOptions("--headless");
         System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.27.0-win64\\geckodriver.exe");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         firefoxOptions.setBinary(firefoxBinary);
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         
         driver = new FirefoxDriver(firefoxOptions);
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@AfterClass
 	public static void cleanUp() {
-		driver.close();
+		driver.quit();
 	}
 
 	@Test
